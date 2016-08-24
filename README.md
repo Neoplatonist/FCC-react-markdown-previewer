@@ -18,8 +18,7 @@ The live demo can be seen here: [CodePen](To be Added). # To be added
 * Webpack React-Hot-Boilerplate from [gaearon](https://github.com/gaearon/react-hot-boilerplate)
 * NodeJS
 * ReactJS
-* Wikipedia API
-* Jquery Ajax
+* [Markdown](https://github.com/chjj/marked)
 * [MaterializeCSS](http://materializecss.com)
 
 ### Usage

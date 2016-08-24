@@ -5,7 +5,7 @@ import Footer from './components/footer';
 
 var markdown = require( 'markdown' ).markdown;
 
-export default class WikiViewerLive extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
 
