@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Helmet from 'react-helmet';
 import Header from './components/header';
 import Footer from './components/footer';
 
@@ -27,12 +26,11 @@ export default class App extends Component {
       <div>
         <Header />
         <main className="container">
-          <Helmet title='Go + React + Redux = rocks!' />
           <div className="row">
-            <div className="s12 m6 col">
-              <textarea name="userInput" id="userInput" onChange={this.userInput} defaultValue={this.state.rendered}></textarea>
+            <div className="m12 l6 col">
+              <textarea className="blue-grey lighten-4" name="userInput" id="userInput" onChange={this.userInput} defaultValue={this.state.rendered}></textarea>
             </div>
-            <div className="s12 m6 col">
+            <div className="m12 l6 col">
               <div className="card white">
                 <div className="card-content" dangerouslySetInnerHTML={{__html: markdown.toHTML(this.state.rendered)}}>
                 </div>

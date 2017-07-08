@@ -1,34 +1,72 @@
 <!doctype html>
 <html>
   <head>
-    <title>Wiki Viewer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Josh F. Johnston | Markdown Previewer</title>
+    <meta name=”description” content=”Josh F. Johnston | Markdown Previewer”>
+    <link rel=”author” href=”https://plus.google.com/103294704664601724823”/>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="A web app that previews GitHub Markdown.">
+    <meta name="twitter:title" content="Josh F. Johnston | Markdown Previewer">
+    <meta name="twitter:description" content="A web app that previews GitHub Markdown.">
+    <meta name="twitter:image" content="https://joshfjohnston.com/static/images/JoshuaPortrait.svg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Josh F. Johnston | Markdown Previewer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://markdown.joshfjohnston.com/" />
+    <meta property="og:image" content="https://joshfjohnston.com/static/images/JoshuaPortrait.svg" />
+    <meta property="og:description" content="A web app that previews GitHub Markdown." />
+    <meta property="og:site_name" content="Josh F. Johnston Portfolio" />
+    <link rel="stylesheet" href="https://joshfjohnston.com/static/css/materialize.min.css">
     <style media="screen">
+      @font-face {
+        font-family: 'MyWebFont';
+        src: url('https://joshfjohnston.com/static/fonts/Courgette.woff2') format('woff2');
+      }
+
+      /* fallback */
+      @font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Material Icons'), local('MaterialIcons-Regular'), url('https://joshfjohnston.com/static/fonts/materialize-font-icons.woff2') format('woff2');
+      }
+
       body {
         background-color: #607d8b;
       }
+
       #wrapper {
         display: flex;
         min-height: 100vh;
         flex-direction: column;
       }
+
+      .container {
+        max-width: 1800px;
+      }
+
       main {
         flex: 1 0 auto;
       }
+
       main .row {
         margin-top: 50px;
-        height: 500px;
+        height: 100%;
       }
+
       main .row textarea {
-        height: 500px;
+        height: calc(100vh - 220px);
       }
+
       main .row .card-content {
         background-color: white;
-        height: 500px;
+        height: calc(100vh - 220px);
         margin-top: -8px;
         overflow-y: scroll;
       }
+
       footer {
         position: fixed;
         right: 0;
@@ -44,8 +82,8 @@
   <body>
     <div id='root'>
     </div>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script defer src="https://joshfjohnston.com/static/js/jquery-3.1.0.min.js"></script>
+    <script defer src="https://joshfjohnston.com/static/js/materialize.min.js"></script>
     <script async defer src="/static/bundle.js"></script>
   </body>
 </html>

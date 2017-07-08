@@ -1,7 +1,7 @@
 Free Code Camp - Wikipedia Viewer
 =====================
 
-This is my solution to the [FCC - Build a Wikipedia Viewer](https://www.freecodecamp.com/challenges/build-a-markdown-previewer).
+This is my solution to the [FCC - Build a Markdown Previewer](https://www.freecodecamp.com/challenges/build-a-markdown-previewer).
 The live demo can be seen here: [CodePen](To be Added). # To be added
 
 ### Requirements
