@@ -24,7 +24,9 @@ export default class App extends Component {
   render() {
     return (
       <div>
+
         <Header />
+
         <main className="container">
           <div className="row">
             <div className="m12 l6 col">
@@ -38,7 +40,9 @@ export default class App extends Component {
             </div>
           </div>
         </main>
+
         <Footer />
+        
       </div>
     );
   }
